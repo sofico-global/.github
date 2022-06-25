@@ -16,9 +16,7 @@ policy:
       # All predicates from the approval rules section are valid here
       title:
         not_matches:
-          - "^(\\d+-[A-Z]+(?!-?[a-zA-Z]{1,10})) / (\\w| )+$"
-        matches:
-          - "^BLOCKED"
+          - "^(fix|feat|chore): (\\w| )+$"
 
     # "options" sets behavior related to disapproval. If it does not exist, the
     # defaults shown below are used.
