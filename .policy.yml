@@ -16,8 +16,7 @@ policy:
       # All predicates from the approval rules section are valid here
       title:
         not_matches:
-          - "^(fix|feat|chore): (\\w| )+$"
-          - "^BREAKING CHANGE: (\\w| )+$"
+          - "^((?<!([A-Za-z]{1,10})-?)[A-Z]+-\d+) / (\\w| )+$"
         matches:
           - "^BLOCKED"
 
