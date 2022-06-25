@@ -16,7 +16,7 @@ policy:
       # All predicates from the approval rules section are valid here
       title:
         not_matches:
-          - "^((?<!([A-Za-z]{1,10})-?)[A-Z]+-\\d+) / (\\w| )+$"
+          - "^(\\d+-[A-Z]+(?!-?[a-zA-Z]{1,10})) / (\\w| )+$"
         matches:
           - "^BLOCKED"
 
