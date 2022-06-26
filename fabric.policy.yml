@@ -4,6 +4,7 @@ policy:
         - "Build config file changes"
         - "Required reviews"
         - "Files that need documentation verification"
+        - "PR title"
 approval_rules:
   - name: "PR title"
     description: "The PR title should follow a certain format"
