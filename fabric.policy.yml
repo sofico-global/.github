@@ -10,7 +10,7 @@ approval_rules:
     description: "The PR title should follow a certain format"
     if:
       title:
-        not_matches:
+        matches:
           - "^(fix|feat|chore): (\\w| )+$"
   - name: "Build config file changes"
     description: "Those fields shouldn't be approved without verification of the config owners"
