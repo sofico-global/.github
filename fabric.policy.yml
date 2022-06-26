@@ -14,7 +14,7 @@ policy:
     if:
       # All predicates from the approval rules section are valid here
       title:
-        matches:
+        not_matches:
           - "^(fix|feat|chore): (\\w| )+$"
     # "requires" sets the users that are allowed to disapprove. If it is not set,
     # disapproval is not enabled.
