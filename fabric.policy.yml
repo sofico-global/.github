@@ -4,14 +4,23 @@ policy:
         - "Build config file changes"
         - "Required reviews"
         - "Files that need documentation verification"
-        - "PR title"
-approval_rules:
-  - name: "PR title"
-    description: "The PR title should follow a certain format"
+  disapproval:
+    # "if" specifies a set of predicates which will cause disapproval if any are
+    # true
+    #
+    # This block, and every condition within it are optional. If the block does
+    # not exist, a pull request is only disapproved if a user takes a disapproval
+    # action.
     if:
+      # All predicates from the approval rules section are valid here
       title:
         matches:
           - "^(fix|feat|chore): (\\w| )+$"
+    # "requires" sets the users that are allowed to disapprove. If it is not set,
+    # disapproval is not enabled.
+    requires:
+      users: [ "filipvh" ]
+approval_rules:
   - name: "Build config file changes"
     description: "Those fields shouldn't be approved without verification of the config owners"
     if:
