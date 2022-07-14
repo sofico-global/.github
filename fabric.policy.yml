@@ -191,7 +191,7 @@ approval_rules:
 
       # A user must be in the list of users or belong to at least one of the given
       # organizations or teams for their approval to count for this rule.
-      teams: [ "sofico-global/miles-next" ]
+      users: [ "PatrickVanStaey" ]
 
       # A user must have at least the minimum permission in this list for their
       # approval to count for this rule. Valid permissions are "admin", "maintain",
@@ -288,7 +288,7 @@ approval_rules:
 
       # A user must be in the list of users or belong to at least one of the given
       # organizations or teams for their approval to count for this rule.
-      teams: [ "sofico-global/bothrs" ]
+      users: [ "filipvh" ]
 
       # A user must have at least the minimum permission in this list for their
       # approval to count for this rule. Valid permissions are "admin", "maintain",
